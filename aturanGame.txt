@@ -1,0 +1,13 @@
+aturan game :
+- pemain harus belajar hingga menyentuh progress 100% untuk bisa ke semester selanjutnya.
+- pemain harus bisa menyeimbangkan antara makan, main, dan tidur untuk bisa belajar dengan maksimal.
+- jika salah satu dari main, makan, dan tidur bernilai 0, pemain harus beristirahat dulu dari belajar dan melakukan hal yang bernilai 0 tersebut untuk bisa kembali belajar.
+- ketika pemain belajar, makan, minum, dan tidur akan berkurang masing-masing sebanyak 2%.
+- ketika pemain makan, tidur akan berkurang sebanyak 2%.
+- ketika pemain main, tidur akan berkurang sebanyak 2%.
+- ketika pemain tidur, makan dan main akan berkurang masing-masing sebanyak 2%.
+- jika pemain tidak belajar selama 8 jam (waktu game), pemain akan di-DO.
+- selama waktu di game bertambah 1 jam, progress makan, main, dan tidur akan berkurang masing-masing sebanyak 4%.
+- ketika pemain sudah menyelesaikan 8 semester, pemain akan lulus dari game ini. 
+- ketika makan, main, dan tidur pemain bernilai 0%, pemain akan meninggal dunia.
+- game ini akan memberikan alert ketika progress pemain mencapai angka tertentu.

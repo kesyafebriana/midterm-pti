@@ -1,0 +1,35 @@
+span {
+    background-color: transparent; 
+    border-color: transparent;
+}
+
+#active {
+    display: inline-block;
+}
+
+#inactive {
+    display: none;
+}
+
+#ch-img {
+    display: inline;
+}
+
+#progBar {
+    width: 60%;
+}
+
+#progBar img {
+    width: 50px;
+}
+
+progress {
+    height: 30px;
+    margin-left: 20px;
+}
+
+body {
+    background-size: contain;
+    background-repeat: inherit;
+}
+
