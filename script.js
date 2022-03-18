@@ -274,3 +274,11 @@ $(document).ready(function () {
 
     });
 })
+
+$('#exit').click(function() {
+    let exit = window.prompt("Are you sure? Y/N");
+    if (exit == "Y" || exit == "y") {
+        window.location.href = "index.html";
+    }
+    
+})
