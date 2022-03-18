@@ -275,6 +275,10 @@ $(document).ready(function () {
     });
 })
 
+$('#exit').hover(function() {
+    $('#exit').attr('class', 'fa-solid fa-door-open')
+})
+
 $('#exit').click(function() {
     let exit = window.prompt("Are you sure? Y/N");
     if (exit == "Y" || exit == "y") {
