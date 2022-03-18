@@ -45,7 +45,7 @@ $(document).ready(function () {
         }
         $(function () {
             if ($('body').is('#web')) {
-                if (countStudy == 1) {
+                if (countStudy == 8) {
                     alert("Kamu sudah tidak belajar selama 8 jam, jadi kamu harus di-DROP OUT!!!");
                     alert("Silakan memulai game dari awal");
                     countStudy = 0;
