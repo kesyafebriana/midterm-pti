@@ -115,6 +115,9 @@ $(document).ready(function () {
     $('#mknBtn').click(function () {
         if (makan >= 0 && makan <= 98) {
 
+            $('#audio').attr('src', 'makan.mp3');
+            $('#audio')[0].play();        
+
             if (act == 'aset/ahmad.png') {
                 $('#imgChar').attr('src', 'aset/ahmadmakan.png');
             } else if (act == 'aset/bella.png') {
@@ -140,6 +143,9 @@ $(document).ready(function () {
 
     $('#tdrBtn').click(function () {
         if (tidur >= 0 && tidur <= 98) {
+
+            $('#audio').attr('src', 'tidur.mp3');
+            $('#audio')[0].play();  
 
             if (act == 'aset/ahmad.png') {
                 $('#imgChar').attr('src', 'aset/ahmadtidur.png');
@@ -173,6 +179,9 @@ $(document).ready(function () {
     $('#mainBtn').click(function () {
         if (main >= 0 && main <= 98) {
 
+            $('#audio').attr('src', 'main.mp3');
+            $('#audio')[0].play();  
+
             if (act == 'aset/ahmad.png') {
                 $('#imgChar').attr('src', 'aset/ahmadmain.png');
             } else if (act == 'aset/bella.png') {
@@ -205,6 +214,9 @@ $(document).ready(function () {
         if (tidur == 0) alert("Kamu belum tidur! Tidur dulu sana!");
 
         if (belajar >= 0 && belajar <= 95 && tidur >= 2 && tidur <= 100 && makan >= 2 && makan <= 100 && main >= 2 && main <= 100) {
+
+            $('#audio').attr('src', 'belajar.mp3');
+            $('#audio')[0].play();  
 
             if (act == 'aset/ahmad.png') {
                 $('#imgChar').attr('src', 'aset/ahmadbelajar.png');
