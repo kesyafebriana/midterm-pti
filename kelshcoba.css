@@ -74,6 +74,11 @@
     padding: 20px 10px 20px 20px;
     overflow-y: scroll;
     background: #fff;
+    border-radius: 6px;
+  }
+
+  main::-webkit-scrollbar {
+    display: none;
   }
 
     p {
@@ -103,7 +108,16 @@
     }
 
 button {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color:white;
+    border-style: solid;
+    border-radius: 7px;
+    font-size: 12pt;
+    border-color:rgba(0, 0, 0, 0.87);
+    border-width: 1.4px;
+    font-family:monospace;
     }
   
