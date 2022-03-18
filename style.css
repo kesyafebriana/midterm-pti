@@ -17,6 +17,9 @@ span {
 
 #progBar {
     width: 60%;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 15px;
 }
 
 #progBar img {
@@ -57,4 +60,16 @@ button#name {
 
 #prev, #next {
     font-size: 40px;
+}
+
+.tes {
+    margin-left: 20px;
+}
+
+#char {
+    margin-left: 100px;
+}
+
+.imgChar {
+    margin-left: 200px;
 }
