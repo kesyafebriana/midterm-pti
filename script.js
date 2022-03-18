@@ -260,7 +260,7 @@ $(document).ready(function () {
         let nama = localStorage.getItem("name");
 
         if (i == 10) {
-            document.write("Congraduation " + nama + "!");
+            window.location.href = "graduation.html";
         }
 
     });
