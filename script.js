@@ -245,6 +245,7 @@ $(document).ready(function () {
 
         if (belajar == 90 || belajar == 95) {
             belajar = 100;
+            alert("Selamat! Kamu naik ke semester " + i);
             $('#belajarProg').val(belajar);
             belajar = 0;
             $('#belajarProg').val(belajar);
@@ -256,8 +257,6 @@ $(document).ready(function () {
             alert("Kamu telah berpulang ke rahmatullah. Silahkan mengulang game dari awal.");
             window.location.href = "index.html";
         }
-
-        let nama = localStorage.getItem("name");
 
         if (i == 10) {
             window.location.href = "graduation.html";
