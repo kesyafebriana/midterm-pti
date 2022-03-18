@@ -275,8 +275,12 @@ $(document).ready(function () {
     });
 })
 
-$('#exit').hover(function() {
+$('#exit').mouseenter(function() {
     $('#exit').attr('class', 'fa-solid fa-door-open')
+})
+
+$('#exit').mouseleave(function() {
+    $('#exit').attr('class', 'fa-solid fa-door-closed')
 })
 
 $('#exit').click(function() {
