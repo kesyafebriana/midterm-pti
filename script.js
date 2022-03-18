@@ -255,11 +255,9 @@ $(document).ready(function () {
             $('#mainProg').val(main);
         }
 
-        if (belajar == 90 || belajar == 95) {
-            belajar = 100;
-            alert("Selamat! Kamu naik ke semester " + i);
-            $('#belajarProg').val(belajar);
+        if (belajar == 100) {
             belajar = 0;
+            alert("Selamat! Kamu naik ke semester " + i);
             $('#belajarProg').val(belajar);
             $('#smt').text("Semester " + i);
             i = i + 1;
