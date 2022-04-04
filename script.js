@@ -115,6 +115,9 @@ $(document).ready(function () {
     $('#mknBtn').click(function () {
         if (makan >= 0 && makan <= 98) {
 
+            $('#audio').attr('src', 'makan.mp3');
+            $('#audio')[0].play();        
+
             if (act == 'aset/ahmad.png') {
                 $('#imgChar').attr('src', 'aset/ahmadmakan.png');
             } else if (act == 'aset/bella.png') {
@@ -140,6 +143,9 @@ $(document).ready(function () {
 
     $('#tdrBtn').click(function () {
         if (tidur >= 0 && tidur <= 98) {
+
+            $('#audio').attr('src', 'tidur.mp3');
+            $('#audio')[0].play();  
 
             if (act == 'aset/ahmad.png') {
                 $('#imgChar').attr('src', 'aset/ahmadtidur.png');
@@ -173,6 +179,9 @@ $(document).ready(function () {
     $('#mainBtn').click(function () {
         if (main >= 0 && main <= 98) {
 
+            $('#audio').attr('src', 'main.mp3');
+            $('#audio')[0].play();  
+
             if (act == 'aset/ahmad.png') {
                 $('#imgChar').attr('src', 'aset/ahmadmain.png');
             } else if (act == 'aset/bella.png') {
@@ -205,6 +214,9 @@ $(document).ready(function () {
         if (tidur == 0) alert("Kamu belum tidur! Tidur dulu sana!");
 
         if (belajar >= 0 && belajar <= 95 && tidur >= 2 && tidur <= 100 && makan >= 2 && makan <= 100 && main >= 2 && main <= 100) {
+
+            $('#audio').attr('src', 'belajar.mp3');
+            $('#audio')[0].play();  
 
             if (act == 'aset/ahmad.png') {
                 $('#imgChar').attr('src', 'aset/ahmadbelajar.png');
@@ -243,10 +255,9 @@ $(document).ready(function () {
             $('#mainProg').val(main);
         }
 
-        if (belajar == 90 || belajar == 95) {
-            belajar = 100;
-            $('#belajarProg').val(belajar);
+        if (belajar == 100) {
             belajar = 0;
+            alert("Selamat! Kamu naik ke semester " + i);
             $('#belajarProg').val(belajar);
             $('#smt').text("Semester " + i);
             i = i + 1;
@@ -257,8 +268,6 @@ $(document).ready(function () {
             window.location.href = "index.html";
         }
 
-        let nama = localStorage.getItem("name");
-
         if (i == 10) {
             window.location.href = "graduation.html";
         }
@@ -266,3 +275,18 @@ $(document).ready(function () {
     });
 })
 
+$('#exit').mouseenter(function() {
+    $('#exit').attr('class', 'fa-solid fa-door-open')
+})
+
+$('#exit').mouseleave(function() {
+    $('#exit').attr('class', 'fa-solid fa-door-closed')
+})
+
+$('#exit').click(function() {
+    let exit = window.prompt("Are you sure? Y/N");
+    if (exit == "Y" || exit == "y") {
+        window.location.href = "index.html";
+    }
+    
+})
